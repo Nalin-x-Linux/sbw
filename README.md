@@ -1,4 +1,0 @@
-sbw
-===
-
-Sharada-Braille-Writer
