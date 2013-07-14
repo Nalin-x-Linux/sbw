@@ -1,0 +1,8 @@
+[Desktop Entry]
+Categories=GNOME;GTK;Utility;Accessibility;
+Version=1.0
+Type=Application
+Terminal=false
+Exec=sharada-braille-writer
+Name=Sharada-Braille-Writer
+Icon=/usr/share/pyshared/sbw/ui/Icon.png

@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+# coding: latin-1
+import os
+import gtk
+import pango
+
+#Importing Sbw Modules
+from sbw.sharada_braille_writer import writer
+
+if __name__ == '__main__':
+	writer()
+
