@@ -58,5 +58,6 @@ cp sharada-braille-writer.desktop /usr/share/applications/
 
 ldconfig
 touch /usr/lib/python2.7/dist-packages/sbw/__init__.py
+chmod 555 /usr/share/pyshared/sbw/data/*
 chmod 777 /usr/share/pyshared/sbw/data/abbreviations.txt
 echo "============ Compleated==========================================="
