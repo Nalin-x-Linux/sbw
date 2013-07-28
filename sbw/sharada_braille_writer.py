@@ -170,7 +170,13 @@ class writer(sbw_text_manipulation.text_manipulation,sbw_tools.tools):
 						else:
 							self.textbuffer.insert_at_cursor(converted_letter)
 							self.set_main_label(converted_letter);
-						self.letter_load("%s_middle"%self.language,self.language)
+						if converted_letter not in ["'","(",'"',"[","{"]:
+							self.letter_load("%s_middle"%self.language,self.language)
+						else:
+							self.letter_load(self.language,self.language)
+							self.stick = True
+							
+						
 			else:
 				if self.run >= 0:
 					self.run -= 1
