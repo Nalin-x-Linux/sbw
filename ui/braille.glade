@@ -196,6 +196,17 @@
                       </object>
                     </child>
                     <child>
+                      <object class="GtkMenuItem" id="Kannada">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="label" translatable="yes">Kannada</property>
+                        <property name="use_underline">True</property>
+                        <accelerator key="F6" signal="activate"/>
+                        <signal name="activate" handler="letter_load_kannada_start" swapped="no"/>
+                      </object>
+                    </child>
+                    <child>
                       <object class="GtkMenuItem" id="Numerical">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
