@@ -50,8 +50,8 @@ class writer(sbw_text_manipulation.text_manipulation,sbw_tools.tools):
 		,'asterisk','parenleft','parenright','underscore','plus','bar','braceright','braceleft','quotedbl','colon',\
 		'question','greater','less'}
 
-		self.language_code_one = {"english":0,"spanish":1,"hindi":2,"malayalam":3,"tamil":4}
-		self.language_code_two = {0:"english",1:"spanish",2:"hindi",3:"malayalam",4:"tamil"}
+		self.language_code_one = {"english":0,"spanish":1,"hindi":2,"malayalam":3,"tamil":4,"kannada":5}
+		self.language_code_two = {0:"english",1:"spanish",2:"hindi",3:"malayalam",4:"tamil",5:"kannada"}
 			
 		self.get_configuration()
 		self.activate_configuration()
@@ -294,6 +294,10 @@ class writer(sbw_text_manipulation.text_manipulation,sbw_tools.tools):
 	def letter_load_spanish_start(self,wedget,data=None):
 		self.letter_load("spanish","spanish")
 		self.set_main_label("Spanish activated")		
+
+	def letter_load_kannada_start(self,wedget,data=None):
+		self.letter_load("kannada","kannada")
+		self.set_main_label("Kannada activated")
 		
 	def letter_load_malayalam_start(self,wedget,data=None):
 		self.letter_load("malayalam","malayalam")
